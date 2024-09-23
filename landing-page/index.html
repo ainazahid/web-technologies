@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Navbar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"
+      >
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="asserts/img1.png"
+              alt="Logo"
+              class="logo"
+              style="width: 50px; height: 50px; border-radius: 50%"
+            />
+            <span class="ms-2">Ayna</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      class="vh-100 d-flex justify-content-center align-items-center text-white"
+      style="background-image: url('img4.avif'); background-size: cover"
+    >
+      <div class="text-center bg-dark bg-opacity-50 p-5 rounded">
+        <h1 class="display-4">Work is Power</h1>
+        <p class="lead">
+          "Success is the result of hard work, perseverance, and learning from
+          failure."<br />"Work hard in silence, let success make the noise."
+        </p>
+        <a href="#read-more" class="btn btn-light">Read More</a>
+      </div>
+    </section>
+
+    <main class="container my-5">
+      <section id="about" class="row">
+        <div class="col-md-6">
+          <h1 class="display-4">About Us</h1>
+          <p>
+            In today’s competitive job market, achieving career success requires
+            more than just technical skills; it demands a strong commitment to
+            personal growth and professional development. At [Your Company
+            Name], we believe in empowering individuals to reach their full
+            potential through tailored career development training and
+            motivational support. Our expert-led programs focus on building
+            essential skills, enhancing confidence, and fostering a growth
+            mindset. We provide personalized coaching and workshops that address
+            both hard and soft skills, ensuring that participants are
+            well-equipped to navigate their career paths. Whether you’re aiming
+            to advance in your current role, pivot to a new industry, or develop
+            critical leadership abilities, our comprehensive approach is
+            designed to inspire and guide you every step of the way. Join us in
+            embracing the journey to success—because with dedication and the
+            right support, the possibilities are endless.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="asserts/img2.jpeg"
+            class="img-fluid rounded w-100"
+            alt="About Us"
+          />
+        </div>
+      </section>
+
+      <section id="services" class="my-5">
+        <h1 class="display-4 text-center">Our Services</h1>
+        <div class="row g-4">
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <img
+                src="asserts/img6.webp"
+                class="card-img-top"
+                alt="Service 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Leadership Development Training</h5>
+                <p class="card-text">
+                  Our Leadership Development program is designed to prepare
+                  individuals for executive roles by enhancing their leadership
+                  skills...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <img
+                src="asserts/img7.avif"
+                class="card-img-top"
+                alt="Service 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Communication and Interpersonal Skills
+                </h5>
+                <p class="card-text">
+                  Effective communication is key to career success. This
+                  training program focuses on improving verbal and non-verbal
+                  communication...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <img
+                src="asserts/img8.avif"
+                class="card-img-top"
+                alt="Service 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project Management Certification</h5>
+                <p class="card-text">
+                  Our Project Management certification course equips
+                  participants with the skills to manage projects of any size or
+                  complexity...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="my-5">
+        <div class="container">
+          <h1 class="display-4 text-center">Contact Us</h1>
+          <form class="row g-3 mx-auto" method="get" enctype="multipart/form-data" style="max-width: 600px;">
+            <div class="col-md-6">
+              <label for="first-name" class="form-label">First Name</label>
+              <input
+                id="first-name"
+                type="text"
+                class="form-control"
+                placeholder="Enter your first name"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="password" class="form-label">Password</label>
+              <input
+                id="password"
+                type="password"
+                class="form-control"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="color" class="form-label">Favorite Color</label>
+              <input id="color" type="color" class="form-control" />
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone</label>
+              <input
+                id="phone"
+                type="tel"
+                class="form-control"
+                placeholder="Enter your phone number"
+              />
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-dark">Submit Record</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      
+      
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+      <h2>Elevate Your Career</h2>
+      <p>
+        Join our professional development programs designed to help you acquire
+        the skills you need to succeed...
+      </p>
+      <p>&copy; Copyright by Ayna Zahid</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
